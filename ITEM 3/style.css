@@ -1,32 +1,29 @@
 body {
-    background-image: url('images/final-kinilaw-dish.jpg');
+    background-image: url(images/final-kinilaw-dish.jpg);
+    background-size: cover; /* Ensures the image covers the whole screen */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repetition */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
     background-color: #f8f9fa;
     text-align: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 header {
-    background-color: transparent; 
     color: #fff;
     padding: 15px;
     border-radius: 8px;
-    font-size: 25px; 
-    font-weight: bold; 
-    font-family: 'Poppins', sans-serif; 
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     letter-spacing: 2px;
 }
 
-header p {
-    font-size: 16px;
-    font-weight: 500;
-    opacity: 1;
-    margin-top: 5px;
+.steps-container {
+    max-width: 600px;
+    margin: auto;
 }
 
 .step {
@@ -36,25 +33,12 @@ header p {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
-    max-width: 600px;
 }
 
-/* Make Step 1 visible by default */
-.step:first-of-type {
+.step.active {
     display: block;
 }
 
-/* Show only the active step */
-.step:target {
-    display: block;
-}
-
-/* Hide inactive steps */
-.step:not(:target) {
-    display: none;
-}
-
-/* Step Images */
 .step-image {
     width: 100%;
     max-width: 400px;
@@ -62,16 +46,17 @@ header p {
     margin-bottom: 15px;
 }
 
-.step a {
+button {
     display: inline-block;
     margin: 10px;
     padding: 10px 15px;
     background: #FFC107;
     color: white;
-    text-decoration: none;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
-.step a:hover {
+button:hover {
     background: #FFA000;
 }
