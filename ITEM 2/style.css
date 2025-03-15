@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    border-bottom: 1px solid #5f99cf;
+   
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    background-color: #ddedfe;
+    border-bottom: 1px solid #5f99cf;
+  }
+  .header-img {
+    margin-top: 2px;
+    margin-right: 5px;
+    margin-right: 10px;
+    height: auto;
+    width: 300px;
+  }
+  .header-bottom-left {
+    display: flex;
+    align-items: center;
+  }
+  .header-bottom-right {
+    display: flex;
+    align-items: center;
+    background-color: #eff7ff;
+    border: 1px solid #000;
+    box-shadow: 0 0 5px #000;
+    padding: 4px;
+  }
+  .header-bottom-right a {
+    margin-right: 5px;
+  }
+  .header-bottom-right span.separator {
+    margin: 0 5px;
+  }
+  .tabmenu {
+    display: flex;
+    padding-right: 39px;
+    justify-content: flex-end;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .tabmenu li {
+    display: inline;
+    font-weight: bold;
+    margin: 0px 3px;
+    font-weight: bold;
+  }
+  .tabmenu li a {
+    padding: 2px 6px 0 6px;
+    background-color: #eff7ff;
+    padding: 5px 10px;
+    background-color: #eff7ff;
+    text-decoration: none;
+    color: #333;
+  }
+  .tabmenu li.selected a {
+    color: orangered;
+    background-color: white;
+    border: 1px solid #5f99cf;
+    border-bottom: 1px solid white;
+    z-index: 100;
+    color: orangered;
+    background-color: white;
+    border: 1px solid #5f99cf;
+    border-bottom: 1px solid white;
+    z-index: 2;
+  }
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  }
+  .header-user-info {
+    position: absolute;
+    top: 28px;
+    border-radius: 3px;
+    right: 45px;
+    background-color: #eaecef;
+    padding: 5px;
+    box-shadow: 0 0 0px #000;
+    z-index: 1;
+  }
+  .header-user-info-shadow {
+    width: 277.31px;
+    height: 23.2px;
+    background-color: #0000006b;
+   
+    position: absolute;
+    top: 26px;
+    border-radius: 5px;
+    right: 43px;
+    z-index: 0;
+  }
+  .header-bottom {
+    background-color: #eaecef;
+    border: 1px solid #5f99cf;
+   
+    box-shadow: 0 0 2px #000;
+  }
+  .search-box input[type="text"] {
+    width: 129px;
+    font-size: 22px;
+    height: 23px;
+  }
+  
+  button {
+    padding: 2px 5px;
+  }
+  
+  img {
+    width: 20px;
+    height: auto;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  .navlink {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .sidenav {
+    text-decoration: none;
+    font-weight: bold;
+    color: gray;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    background-color: #f6f6f6;
+  }
+  
+  header {
+    background: #c7d8ec;
+    color: black;
+    padding: 10px;
+    font-size: 24px;
+  }
+  
+  .navbar {
+    color: white;
+    padding: 10px;
+    padding-left: 280px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 200px auto 700px;
+    width: 100%;
+    height: 100vh;
+    max-width: 100vw;
+    margin: 0;
+  }
+  
+  .sidebar {
+    border: 1px solid rgb(123, 123, 123);
+  }
+  
+  .left {
+    position: absolute;
+    background-color: #dae0e6;
+    top: 50px;
+    left: 0;
+    width: 200px;
+    height: calc(100vh - 50px);
+    padding: 10px;
+    border: 1px solid rgb(123, 123, 123);
+    z-index: 10;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .left nav ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .left nav ul li {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .left nav ul li img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+  }
+  
+  .left nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #336699;
+    font-size: 13px;
+  }
+  
+  .left nav ul li:hover {
+    background-color: #c7d8ec;
+    cursor: pointer;
+  }
+  
+  .right {
+    grid-column: 3 / 4;
+  }
+  
+  .content {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+   
+   
+  }
+  
+  .post {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .vote-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: gray;
+    margin-left: 10px;
+  }
+  
+  .upvote,
+  .downvote {
+    background: none;
+    color: gray;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .vote-count {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .post-content {
+    flex: 1;
+  }
+  
+  .post a {
+    text-decoration: none;
+    color: blue;
+  }
+  
+  .post-details {
+    font-size: 12px;
+    color: gray;
+  }
+  
+  .post-stats {
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+  }
+  
+  .post-number {
+    color: gray;
+  }
+  
+  .postview {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .post-title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .post-stat-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 15px;
+    background-color: white;
+    color: gray;
+    border-radius: 2px;
+  }
+  
+  .comments {
+    padding: 15px;
+  }
+  
+  .add-comment {
+    display: flex;
+    margin-top: 15px;
+  }
+  
+  .replies {
+    margin-top: 10px;
+    padding: 10px;
+   
+   
+  }
+  
+  .reply {
+    padding: 8px;
+    border-left: 1px solid #e0e0e0;
+  }
+  
+  .reply:last-child {
+    border-bottom: none;
+  }
+  
+  .reply-user {
+    font-weight: bold;
+    color: #336699;
+  }
+  
+  .reply-text {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .reply-actions {
+    font-size: 12px;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .reply-actions span {
+    margin-right: 10px;
+  }
+  
+  .reply-actions span:hover {
+    text-decoration: underline;
+  }
+  
+  .search-button {
+      padding: 0px;
+      cursor: pointer;
+      left: -4px;
+      position: relative;
+      border-width: thin;
+      bottom: 0px;
+      height: 23px;
+  }
+  
+  
+  @media (max-width: 900px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  
+    .sidebar {
+      display: none;
+    }
+  }
+  
