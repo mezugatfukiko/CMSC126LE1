@@ -1,19 +1,51 @@
+/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
+/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f5f5f5;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                url('images/news.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    background-color: #000;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    min-height: 100vh;
 }
 
+header {
+    background-color: rgba(34, 34, 34, 0.9);
+    color: red;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 2px;
+}
+
+/* News Container */
 .news-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
     max-width: 800px;
-    width: 90%;
+    margin: 20px auto;
+    width: 100%;
+    justify-content: center;
+    background-color: rgba(255, 250, 250, 0.9);
+    border-radius: 10px;
+}
+/* .news-container {
+    max-width: 800px;
+    width: 100%;
     background: #fff;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -22,21 +54,12 @@ body {
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
-}
+} */
 
-header {
-    width: 100%;
-    text-align: center;
-    font-size: 28px;
-    font-weight: 700;
-    padding: 15px 0;
-    color: #222;
-}
-
+/* News Articles */
 .newsfeed {
     display: flex;
     flex-direction: column;
-    flex: 2;
     gap: 20px;
 }
 
@@ -51,104 +74,89 @@ header {
 }
 
 .news-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px) scale(1.05);
 }
 
 .news-card img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
-    object-fit: cover;
+    display: block;
 }
 
 .news-content {
-    padding: 15px 0;
+    padding: 15px;
+    color: black;
 }
 
 .news-content h2 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 8px;
-    color: #333;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: red;
 }
 
 .news-content .date {
-    font-size: 14px;
-    color: #777;
-    margin-bottom: 12px;
+    color: blue;
+    font-size: 0.9rem;
+    margin: 5px 0;
 }
 
 .news-content p {
-    font-size: 16px;
-    color: #444;
-    line-height: 1.6;
+    margin: 10px 0;
 }
 
 .news-content a {
+    color: blue;
     text-decoration: none;
-    color: #007BFF;
-    font-weight: 700;
-    transition: color 0.3s ease;
+    font-weight: bold;
 }
 
 .news-content a:hover {
-    color: #0056b3;
+    color: red;
 }
 
+/* Sidebar */
 .sidebar {
-    background: #fff;
-    padding: 20px;
+    background: white;
     border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    max-width: 250px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: black;
 }
 
 .sidebar h2 {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 12px;
-    color: #222;
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: red;
 }
 
 .sidebar ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
 .sidebar ul li {
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-.sidebar ul li:last-child {
-    border-bottom: none;
+    margin-bottom: 10px;
 }
 
 .sidebar ul li a {
+    color: blue;
     text-decoration: none;
-    color: #007BFF;
-    font-weight: 600;
-    transition: color 0.3s ease;
+    font-weight: bold;
 }
 
 .sidebar ul li a:hover {
-    color: #0056b3;
+    color: red;
 }
 
+/* Responsive Design */
 @media (max-width: 600px) {
     .news-container {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
     }
+
     .sidebar {
         order: -1;
-        width: 100%;
-        max-width: none;
-    }
-    .news-content h2 {
-        font-size: 20px;
     }
 }
-fonts.googleapis.com
