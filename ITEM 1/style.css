@@ -28,7 +28,7 @@ h1 {
     margin: 0;
     font-size: 2rem;
     color: white;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
 }
 
 /* News Container */
@@ -40,21 +40,9 @@ h1 {
     margin: 20px auto;
     width: 100%;
     justify-content: center;
-    background-color: rgba(255, 250, 250, 0.9);
+    background-color: rgba(255, 250, 250, 0.3);
     border-radius: 10px;
 }
-/* .news-container {
-    max-width: 800px;
-    width: 100%;
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
-} */
 
 /* News Articles */
 .newsfeed {
