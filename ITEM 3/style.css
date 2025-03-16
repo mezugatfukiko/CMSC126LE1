@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
 body {
     background-image: url(images/final-kinilaw-dish.jpg);
     background-size: cover; /* Ensures the image covers the whole screen */
     background-position: center; /* Centers the background image */
     background-repeat: no-repeat; /* Prevents repetition */
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 20px;
     background-color: #f8f9fa;
@@ -14,15 +16,20 @@ header {
     color: #fff;
     padding: 15px;
     border-radius: 8px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     letter-spacing: 2px;
 }
 
+header p {
+    font-size: 15px;
+    font-weight: normal;
+}
+
 .steps-container {
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
 }
 
@@ -35,16 +42,24 @@ header {
     margin: 20px auto;
 }
 
+
+.step p{
+    font-size: 15px;
+}
+
 .step.active {
     display: block;
+        justify-content: center;
 }
 
 .step-image {
-    width: 100%;
-    max-width: 400px;
+    width: 400px;  
+    height: 300px; 
+    object-fit: cover;
     border-radius: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
+
 
 button {
     display: inline-block;
@@ -55,8 +70,11 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 button:hover {
     background: #FFA000;
 }
+
